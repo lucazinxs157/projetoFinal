@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro do Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input [(ngModel)]="nome" name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Idade</ion-label>
+      <ion-input [(ngModel)]="idade" name="idade" type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="salvarCliente()">Cadastrar</ion-button>
+</ion-content>
